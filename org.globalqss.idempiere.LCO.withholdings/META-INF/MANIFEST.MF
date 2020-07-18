@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Withholdings
+Bundle-SymbolicName: org.globalqss.idempiere.LCO.withholdings;singleton:=true
+Bundle-Version: 4.1.0.qualifier
+Bundle-Activator: org.adempiere.plugin.utils.Incremental2PackActivator
+Export-Package: org.globalqss.model,
+ org.globalqss.process
+Require-Bundle: org.adempiere.base;bundle-version="4.1.0",
+ org.adempiere.plugin.utils;bundle-version="4.1.0",
+ org.adempiere.base.callout;bundle-version="4.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.service.event
+Service-Component: OSGI-INF/lco_modelfactorywh.xml,OSGI-INF/lco_processfactorywh.xml,OSGI-INF/lco_calloutfactorywh.xml,OSGI-INF/lco_validatorwh.xml
